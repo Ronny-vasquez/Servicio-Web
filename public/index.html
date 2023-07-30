@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicio Web</title>
+    <script src="./js/contactos.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Agenda De Contactos</h1>
+
+      <form class="form" id="contactForm">
+        <input type="text" id="nombre" placeholder="Nombre:" required />
+        <input type="text" id="apellido" placeholder="Apellido:" required />
+        <input type="tel" id="telefono" placeholder="Teléfono:" required />
+        <button type="submit">Agregar Nuevo Contacto</button>
+      </form>
+      <label for="">
+        Search :
+        <input
+          id="filterInput"
+          class="Filtro"
+          type="text"
+          placeholder="Buscar"
+        />
+      </label>
+
+      <div style="text-align: center">
+        <table id="contactTable">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Teléfono</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
